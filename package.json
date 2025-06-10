@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "server": "nodemon server/server.js",
     "start": "node server/server.js",
-    "builder": "npm install && npm run build",
+    "builder": "npm run build",
     "postinstall": "echo 'Skipping Chromium download for Puppeteer'"
   },
   "puppeteer": {
