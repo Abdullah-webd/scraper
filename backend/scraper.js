@@ -108,6 +108,7 @@ export async function scrapeByQuestionType(page, questionType, subjectName, subj
 
 export async function scrapeAllQuestions(subjectName, subjectSlug, sessionId, clients) {
   const browser = await puppeteer.launch({
+    executablePath: "/usr/bin/chromium-browser",
     headless: "new",
     args: [
       "--no-sandbox",

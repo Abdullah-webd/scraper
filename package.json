@@ -9,8 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "nodemon server/server.js",
-    "start": "npm run server.js && npm run dev",
-    "builder": "npm install && npm run build "
+    "start": "node server/server.js",
+    "builder": "npm install && npm run build",
+    "postinstall": "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true echo 'Skipping Chromium download on install for Render deployment'"
   },
   "dependencies": {
     "axios": "^1.6.2",
